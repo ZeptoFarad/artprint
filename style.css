@@ -54,6 +54,32 @@ table {
 }
 
 /* ------------------------------------- END CSS RESET ------------------------------------- */
+/* ------------------------------------- GLOBAL STYLING START ------------------------------------- */
+
+h1 {
+  font-family: Roboto, arial;
+  font-size: 40px;
+  color: white;
+}
+
+h2{
+  font-family: Roboto, arial;
+  font-size: 35px;
+  color: white;
+}
+
+p {
+  font-family: Roboto, arial;
+  font-size: 20px;
+}
+
+.multi-section{
+  margin: 5vh 0 5vh;
+  height: 40vh;
+  background-color: black;
+}
+
+/* ------------------------------------- GLOBAL STYLING END ------------------------------------- */
 /* ------------------------------------- HEADER START ------------------------------------- */
 header {
   background-color: black;
@@ -79,6 +105,7 @@ header #logo-header {
 
 header .flex-grid {
   flex-direction: row;
+  height: 100%;
 }
 
 #logo-header {
@@ -106,7 +133,7 @@ nav {
   margin-top: 10px;
   padding-left: 30vw;
   padding-right: 30vw;
-  border-bottom: 3px solid red;
+  border-bottom: 4px solid red;
 }
 
 nav a {
@@ -183,13 +210,21 @@ nav a:hover {
   /* turns column into flex container parent */
   justify-content: flex-end;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+
   flex-direction: column;
   height: 50vh;
   margin-left: 0;
   margin-right: 0;
+
 }
+
+#landing{
+  margin-top: 0;
+  padding-top: 0;
+  background-color: black;
+}
+
 
 .landing-text {
   display: flex;
@@ -229,18 +264,34 @@ nav a:hover {
 }
 
 /* ------------------------------------- LANDING END ------------------------------------- */
+
 /* ------------------------------------- PRINTING SECTION START ------------------------------------- */
 #printing .col {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 5vh;
+
+}
+
+#printing div{
+    border: solid 4px white;
 }
 
 #printing {
   flex-direction: row-reverse;
+  height: 100%;
 }
 
+#printing p{
+  color: white;
+}
+#printing img{
+  height: 100%;
+  width: 100%;
+}
+/* ------------------------------------- PRINTING SECTION END ------------------------------------- */
 #framing .col {
   display: flex;
   align-items: center;
@@ -294,18 +345,6 @@ nav a:hover {
   font-size: 20px;
   display: block;
   padding-left: 100px;
-}
-
-/* +++ Headings +++ */
-h1 {
-  font-family: Roboto, arial;
-  font-size: 40px;
-  color: white;
-}
-
-p {
-  font-family: Roboto, arial;
-  font-size: 20px;
 }
 
 /* +++ Buttons +++ */
